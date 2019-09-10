@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<button type="button" onclick="forward()" id="fw_btn">FORWARD</button>
+<button type="button" onclick="stop()" id="fw_btn">STOP!!!</button>
+<img src="img/1.PNG" onclick="forward()" height="30" width="30">
+
+</body>
+
+<script>
+
+function forward() {
+	$.get("http://localhost:5000/run", function(data, status){});
+}
+
+function stop() {
+        $.get("http://localhost:5000/stop", function(data, status){});
+}
+
+</script>
+</html>
